@@ -6,14 +6,13 @@ Build a discussion forum based on using a pre-existing well-documented open sour
 ## TL;DR
 Building from scratch using React.js triumphs existing discussion forums that have little flexibility using SQL DB configuration. This is my attempt to study the effectiveness of React.js. 
 
-
 ## Before React.js
 
 #### Research Findings
-===
 Searching within the existing open source libraries on discussion forums, I found these three most viable options:
 
-[NodeBB](https://github.com/NodeBB/NodeBB) - Popular and highly recommended Node.js discussion forum 
+[NodeBB](https://github.com/NodeBB/NodeBB) -
+Popular and highly recommended Node.js discussion forum 
 
 **Pros**
 + Open source
@@ -24,7 +23,8 @@ Searching within the existing open source libraries on discussion forums, I foun
 + Default DB configuration is NoSQL (Redis, Mongo)
 + Running a secondary DB is said to be possible but experimental (Suggestion: MySQL NoSQL connector)
 
-[Discourse](https://github.com/discourse/discourse) - Community discussion platform that features mailing list, discussion forum, and chatrooms
+[Discourse](https://github.com/discourse/discourse) -
+Community discussion platform that features mailing list, discussion forum, and chatrooms
 
 **Pros**
 + Free and open source
@@ -34,7 +34,7 @@ Searching within the existing open source libraries on discussion forums, I foun
 + Back-end built with Ruby on Rails, not JS
 + Uses NoSQL (PostgreSQL, Redis)
 
-[Ghost](https://github.com/TryGhost/Ghost/tree/master)
+[Ghost](https://github.com/TryGhost/Ghost/tree/master) -
 Multi-author blogging platform with quick and easy archive indexing
 
 **Pros**
@@ -52,13 +52,18 @@ NodeBB was the most recommended option due to its continuous updates and plug-in
 
 Node.js + SQL = rare combination in the booming world of MEAN stack.
 
-
 ## After React.js
-
 I saw a FB event about React.js: "The Frontend Framework of the Future" but I saw no correlation to this project at first. I attended the talk out of curiosity.
 
-#### After attending the talk by UW Hacker's very own [Grant Timmerman](http://grant.cm/), I realized that [React.js](https://facebook.github.io/react/) might just be able to have the potency that this project needs.
+After attending the talk by UW Hacker's very own [Grant Timmerman](http://grant.cm/), **I realized that [React.js](https://facebook.github.io/react/) might just be able to have the potency that this project needs**.
 
 Although I would not be using a pre-existing open source library (thus, requiring more time-consuming to build), React.js is a JavaScript UI library that can combine with Node.js with SQL DB. Score!
 
 This is my first project using React.js (The project may contain excessive commenting).
+
+#### Run the Progam
+1. In terminal, start your server `python -m SimpleHTTPServer 8000`
+2. In browser, http://localhost:8000/
+
+#### End the Server
+In terminal, Control + C

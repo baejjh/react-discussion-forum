@@ -27,7 +27,7 @@ var CommentArea = React.createClass({
 
   // Handle submitting the comment
   handleSubmit: function(e) {
-    // Prevent page refresh
+    // Prevent page refresh when the btn is clicked
     e.preventDefault();
 
     if (this.state.userInput) {
@@ -72,12 +72,12 @@ var CommentArea = React.createClass({
       </section>
     );
   }
-});
+}); //end CommentArea
 
 var multipleComments = (
   <div>
+    <CommentArea username="jenny.bae.92" />
     <CommentArea username="UWHacks" />
-    <CommentArea username="StartupUW" />
     <CommentArea username="GrantTimmerman" />
   </div>
 );
